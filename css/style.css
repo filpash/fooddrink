@@ -1,0 +1,856 @@
+body {
+    background-color: #161f21;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
+    font-family: 'Lobster', cursive!important;
+}
+
+p, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    margin-bottom: 0!important;
+}
+
+/*header*/
+
+nav {
+    background-color: #a43604;
+}
+
+.sidenav {
+    background-color: #a43604;
+    width: 180px!important;
+}
+
+.brand-logo img{
+    padding-top: 5px;
+}
+
+.carousel {
+    height: auto;
+}
+
+ul#nav-mobile {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
+
+li.dws-li {
+    list-style: none;
+}
+
+li.dws-li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+    position: relative;
+}
+
+li.dws-li a i {
+    margin-right: 10px;
+}
+
+li.dws-li a:before {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #eb8b35;
+    position: absolute;
+    top: 83%;
+    left: 0;
+    transition: .5s;
+    mix-blend-mode: multiply;
+}
+
+li.dws-li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #a43604;
+    position: absolute;
+    top: 83%;
+    right: 0;
+    transition: .5s;
+    mix-blend-mode: multiply;
+}
+
+li.dws-li:hover a:before{
+    width: 50%;
+    transform: translateX(100%);
+}
+
+li.dws-li:hover a::after {
+    width: 50%;
+    transform: translateX(-100%);
+}
+
+li.dws-li a:hover {
+    color: #a43604;
+}
+
+.carousel.carousel-slider .carousel-fixed-item {
+    position: absolute;
+    top: 90%;
+    left: 0;
+    right: 0;
+    bottom: 0!important;
+    z-index: 1;
+}
+
+.white-text {
+    position: fixed;
+    top: 50%;
+    left: 30%;
+    z-index: 100;
+    font-size: 50px;
+    color: black !important;
+    text-shadow: -1px -1px #FFF,
+    -2px -2px #FFF,
+    -1px 1px #FFF,
+    -2px 2px #FFF,
+    1px 1px #FFF,
+    2px 2px #FFF,
+    1px -1px #FFF,
+    2px -2px #FFF,
+    -3px -3px 2px #BBB,
+    -3px 3px 2px #BBB,
+    3px 3px 2px #BBB,
+    3px -3px 2px #BBB;
+}
+
+/*about project*/
+
+.title-icon {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.icon-color{
+    color: black;
+    text-shadow: -1px -1px #FFF,
+    -2px -2px #FFF,
+    -1px 1px #FFF,
+    -2px 2px #FFF,
+    1px 1px #FFF,
+    2px 2px #FFF,
+    1px -1px #FFF,
+    2px -2px #FFF,
+    -3px -3px 2px #BBB,
+    -3px 3px 2px #BBB,
+    3px 3px 2px #BBB,
+    3px -3px 2px #BBB;
+}
+
+.title-icon-text {
+    color: #fafafa;
+    margin-bottom: 40px;
+}
+
+.title-icon_text {
+    color: black;
+    margin-bottom: 40px;
+    font-size: 40px;
+    text-shadow: -1px -1px #FFF,
+    -2px -2px #FFF,
+    -1px 1px #FFF,
+    -2px 2px #FFF,
+    1px 1px #FFF,
+    2px 2px #FFF,
+    1px -1px #FFF,
+    2px -2px #FFF,
+    -3px -3px 2px #BBB,
+    -3px 3px 2px #BBB,
+    3px 3px 2px #BBB,
+    3px -3px 2px #BBB;
+}
+
+.section-text {
+    color: black;
+    padding-top: 70px;
+    line-height: 2;
+    text-align: justify;
+    font-weight: 400;
+    text-shadow: -1px -1px #FFF,
+    -2px -2px #FFF,
+    -1px 1px #FFF,
+    -2px 2px #FFF,
+    1px 1px #FFF,
+    2px 2px #FFF,
+    1px -1px #FFF,
+    2px -2px #FFF,
+    -3px -3px 2px #BBB,
+    -3px 3px 2px #BBB,
+    3px 3px 2px #BBB,
+    3px -3px 2px #BBB;
+}
+
+/*food category*/
+
+.category-title {
+    text-align: center;
+    color: black;
+    margin-top: 30px;
+    text-shadow: -1px -1px #FFF,
+    -2px -2px #FFF,
+    -1px 1px #FFF,
+    -2px 2px #FFF,
+    1px 1px #FFF,
+    2px 2px #FFF,
+    1px -1px #FFF,
+    2px -2px #FFF,
+    -3px -3px 2px #BBB,
+    -3px 3px 2px #BBB,
+    3px 3px 2px #BBB,
+    3px -3px 2px #BBB;
+}
+
+.butt-group {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin-top: 20px;
+}
+
+.butt {
+    border: 3px solid #eb8b35;
+    font-size: 30px;
+    color: #eb8b35;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 350px;
+    height: 60px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+    transition: .5s;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.butt::before,
+.butt::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #a43604;
+    top: 0;
+    left: -100%;
+    opacity: .5;
+    transition: .3s;
+    z-index: -1;
+}
+
+.butt::after {
+    opacity: 1;
+    transition-delay: .2s;
+}
+
+.butt:hover {
+    color: #fff;
+}
+
+.butt:hover::before,
+.butt:hover::after {
+    left: 0;
+}
+
+/*suggest-category*/
+
+.contain {
+    width: 450px;
+    height: 340px;
+    background-color: rgba(164, 54, 4, 0.7);
+    margin: 50px auto 0 auto;
+    text-align: center;
+    box-shadow: 0 -5px 0 #eb8b35;
+    border-radius: 0 0 10px 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 300px!important;
+    height: 40px!important;
+    font-size: 18px!important;
+    margin-top: 18px!important;
+    margin-bottom: 18px!important;
+    border-radius: 4px!important;
+    padding-left: 10px!important;
+}
+
+textarea {
+    width: 306px!important;
+    height: 7rem!important;
+}
+
+textarea.materialize-textarea {
+    line-height: normal;
+    overflow-y: hidden;
+    padding: .8rem 0 .8rem 0.7rem!important;
+    resize: none;
+    min-height: 3rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.dws-submit {
+    padding: 13px 30px;
+    margin: 5px 0 20px 0;
+    font-size: 15px;
+    color: #fff;
+    background-color: #eb8b35;
+    border: none;
+    border-bottom: 4px solid #ffcc80;
+    cursor: pointer;
+}
+
+.dws-submit:hover {
+    transition: all 0.5s;
+    background: #fff;
+    color: #eb8b35;
+}
+
+/*first food*/
+
+.food-container {
+    text-align: center;
+    background-color: #b3b3b3;
+    background-image: url("https://www.transparenttextures.com/patterns/crisp-paper-ruffles.png");
+}
+
+.food-title {
+    color: #a43604;
+    font-size: 30px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.food-title-ingrid {
+    color: #ef6c00;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    text-shadow: -1px -1px white,
+    -2px -2px white,
+    -1px 1px white,
+    -2px 2px white,
+    1px 1px white,
+    2px 2px white,
+    1px -1px white,
+    2px -2px white,
+    -3px -3px 2px white,
+    -3px 3px 2px white,
+    3px 3px 2px white,
+    3px -3px 2px white;
+}
+
+.food-material-image-1 {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    max-width: 520px;
+}
+
+.title-food-text {
+    color: #fafafa;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    text-shadow: -1px -1px black,
+    -2px -2px black,
+    -1px 1px black,
+    -2px 2px black,
+    1px 1px black,
+    2px 2px black,
+    1px -1px black,
+    2px -2px black,
+    -3px -3px 2px black,
+    -3px 3px 2px black,
+    3px 3px 2px black,
+    3px -3px 2px black;
+}
+
+.video-material {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    max-width: 520px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.food-title-price {
+    color: #a43604;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.ingrid {
+    color: black;
+}
+
+.food-material-image-1 {
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.other-category-img {
+    display: block;
+    padding-bottom: 60px;
+}
+
+.category-drink-1,
+.category-drink-2,
+.category-drink-3,
+.category-drink-4,
+.category-drink-5 {
+    width: 15%;
+    display: inline-block;
+}
+
+.butt-food {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.waves-effect {
+    -webkit-transition: .2s ease-out!important;
+    transition: .2s ease-out!important;
+}
+
+.waves-effect:hover {
+    background: #eb8b35!important;
+}
+
+.food-cat-item-1,
+.food-cat-item-2 {
+    display: block;
+    text-align: center;
+}
+
+a{
+    color: #fff!important;
+}
+
+/*about*/
+
+.about-person {
+    margin-top: 90px;
+}
+
+.img-person {
+    border-radius: 150px;
+    width: 150px;
+    height: 150px;
+}
+
+.person-info-title {
+    color: #fff;
+    text-shadow: -1px -1px #000,
+    0 1px 0 #444;
+}
+
+.person-info-subtitle {
+    color: black;
+    font-weight: 600;
+    text-shadow: -1px -1px #FFF,
+    -2px -2px #FFF,
+    -1px 1px #FFF,
+    -2px 2px #FFF,
+    1px 1px #FFF,
+    2px 2px #FFF,
+    1px -1px #FFF,
+    2px -2px #FFF,
+    -3px -3px 2px #BBB,
+    -3px 3px 2px #BBB,
+    3px 3px 2px #BBB,
+    3px -3px 2px #BBB;
+    text-transform: uppercase;
+    font-family: 'Caveat', cursive;
+}
+
+/*footer*/
+
+.footer {
+    background: #a43604;
+    padding-top: 20px;
+}
+
+.footer-item-title {
+    text-align: center;
+}
+
+.page-footer {
+    background: #a43604!important;
+}
+
+.footer-title {
+    color: #eb8b35;
+}
+
+.footer-item-subtitle {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.footer-subtitle {
+    color: #b3b3b3;
+    font-size: 20px;
+}
+
+.footer-item {
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.footer-icon {
+    padding-right: 20px;
+}
+
+i.fa.fa-facebook-square:hover {
+    color: #eb8b35;
+}
+
+i.fa.fa-youtube:hover {
+    color: #eb8b35;
+}
+
+i.fa.fa-instagram:hover {
+    color: #eb8b35;
+}
+
+i.fa.fa-vk:hover {
+    color: #eb8b35;
+}
+
+.footer-down {
+    background-color: #e65100!important;
+}
+
+.footer-item-down {
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/*media*/
+
+@media screen and (min-width:1530px) {
+    .other-category-img {
+        display: flex;
+        padding-bottom: 60px;
+    }
+
+    .category-drink-1,
+    .category-drink-2,
+    .category-drink-3,
+    .category-drink-4,
+    .category-drink-5 {
+        width: 15%;
+        display: inline-block;
+        margin-left: 40px;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    .white-text {
+        font-size: calc(100vw * 0.03);
+    }
+
+}
+
+@media screen and (max-width:1250px) {
+    /*food category*/
+
+    .title-icon {
+        text-align: center;
+        margin-top: 120px;
+    }
+
+    .btn-group {
+        text-align: center;
+        margin: 0 200px 0 200px;
+    }
+
+    .about-person {
+        margin-top: 50px;
+    }
+
+    .img-person {
+        width: 120px;
+        height: 120px;
+    }
+
+}
+
+@media screen and (max-width:1196px) {
+    /*food category*/
+    .food {
+        height: 400px;
+    }
+
+    .title-icon {
+        text-align: center;
+        margin-top: 90px;
+    }
+
+    .btn-group {
+        text-align: center;
+        margin: 0 200px 0 200px;
+    }
+
+    .team {
+        height: 700px;
+    }
+
+    .img-person {
+        width: 120px;
+        height: 120px;
+    }
+
+}
+
+@media screen and (max-width:992px) {
+    .white-text {
+        top: 40%;
+        font-size: 40px
+    }
+
+    /*food category*/
+    .btn-group {
+        text-align: center;
+        margin: 0 200px 0 200px;
+    }
+
+    .food {
+        height: 400px;
+    }
+
+    .title-icon {
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    i.large {
+        font-size: 4rem;
+    }
+
+    .title-icon-text {
+        color: #fafafa;
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    .team {
+        height: 650px;
+    }
+
+    .img-person {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .white-text {
+        top: 25%;
+        font-size: 30px
+    }
+
+    /*food category*/
+    .btn-group {
+        text-align: center;
+        margin: 0 150px 0 150px;
+    }
+
+    .team {
+        height: 600px;
+    }
+
+    .about-person {
+        margin-top: 20px;
+    }
+
+    .img-person {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media screen and (max-width:604px) {
+
+    .suggest {
+        height: 600px;
+    }
+
+    .img-person {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-person {
+        margin-top: 10px;
+    }
+
+    .team {
+        height: 1110px;
+    }
+
+    .about-person {
+        margin-top: 20px;
+    }
+
+    .img-person {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media screen and (max-width:544px) {
+
+    .contain {
+        width: 350px;
+        height: 340px;
+    }
+
+    .white-text {
+        top: 15%;
+        font-size: 25px
+    }
+
+    .category-title {
+        font-size: 30px;
+    }
+
+    .section-text {
+        padding-top: 40px;
+        line-height: 2;
+        text-align: justify;
+        font-size: 20px;
+    }
+
+    i.large {
+        font-size: 3rem;
+    }
+
+    .title-icon-text {
+        color: #fafafa;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .team {
+        height: 1110px;
+    }
+
+    .about-person {
+        margin-top: 20px;
+    }
+
+    .img-person {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media (max-width:420px) {
+
+    .contain {
+        width: 300px;
+        height: 340px;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        width: 240px!important;
+        height: 40px!important;
+        font-size: 18px!important;
+        margin-top: 18px!important;
+        margin-bottom: 18px!important;
+        border-radius: 4px!important;
+        padding-left: 10px!important;
+    }
+
+    textarea {
+        width: 246px!important;
+        height: 7rem!important;
+    }
+
+    .white-text {
+        top: 15%;
+        font-size: 15px
+    }
+
+    .butt {
+        font-size: 20px;
+        width: 250px;
+    }
+
+    .section-text {
+        padding-top: 20px;
+        line-height: 2;
+        text-align: justify;
+        font-size: 18px;
+    }
+
+    .team {
+        height: 1110px;
+    }
+
+    .about-person {
+        margin-top: 20px;
+    }
+
+    .img-person {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media (max-width:320px) {
+    .section-text {
+        padding-top: 40px;
+        line-height: 2;
+        text-align: justify;
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
